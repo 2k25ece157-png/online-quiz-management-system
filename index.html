@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Online Quiz Management System - C, Singly Linked List and Queue capstone project">
+<title>Online Quiz Management System | Capstone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><div class="brand">Q <span>QuizFlow</span></div>
+<nav><a href="#home">Home</a><a href="#features">Features</a><a href="#structures">Data Structures</a><a href="#workflow">Workflow</a></nav>
+<button onclick="openQuiz()">Start Quiz</button></header>
+
+<section id="home" class="hero">
+<div><p class="eyebrow">COLLEGE CAPSTONE PROJECT</p><h1>Online Quiz<br><em>Management System</em></h1>
+<p class="lead">An interactive quiz platform demonstrating <b>C Programming</b>, <b>Singly Linked List</b> and <b>Queue</b> concepts through a real-world application.</p>
+<button onclick="openQuiz()">Take a Demo Quiz →</button>
+<button class="outline" onclick="document.querySelector('#structures').scrollIntoView({behavior:'smooth'})">Explore Data Structures</button>
+<div class="stats"><b>C <small>Language</small></b><b>2 <small>Core Structures</small></b><b>100% <small>Auto Evaluation</small></b></div></div>
+<div class="mock"><div class="top">● ● ● <span>Quiz Dashboard</span></div><div class="bar"></div><small>QUESTION 03 / 05</small><h3>Which data structure follows FIFO?</h3><p class="choice">A. Stack</p><p class="choice good">B. Queue ✓</p><p class="choice">C. Tree</p><p class="choice">D. Graph</p></div>
+</section>
+
+<section id="features" class="section"><div class="heading"><p class="eyebrow">FEATURES</p><h2>Everything needed for a simple quiz workflow.</h2></div>
+<div class="grid"><article>📝<h3>Question Management</h3><p>Add, view, edit and delete quiz questions.</p></article><article>🎓<h3>Student Quiz</h3><p>Students enter details and attend an interactive quiz.</p></article><article>⚡<h3>Instant Evaluation</h3><p>Answers are automatically compared and scored.</p></article><article>📊<h3>Result Analysis</h3><p>Score, percentage, correct and wrong answers.</p></article><article>🔗<h3>Linked List</h3><p>Questions are represented as connected nodes.</p></article><article>⏳<h3>Queue</h3><p>Student attempts demonstrate FIFO processing.</p></article></div></section>
+
+<section id="structures" class="section light"><div class="heading"><p class="eyebrow">DATA STRUCTURES</p><h2>Why these structures?</h2><p>We selected each structure according to the problem it solves.</p></div>
+<div class="two"><article class="card"><h2>🔗 Singly Linked List</h2><p><b>Used for Question Management</b></p><p>Each question is stored in a node and points to the next question. This supports dynamic insertion, deletion and traversal.</p><div class="chain"><b>Q1</b> → <b>Q2</b> → <b>Q3</b> → NULL</div><ul><li>Dynamic storage</li><li>Insert / delete / traverse</li><li>No fixed question count</li></ul></article>
+<article class="card"><h2>🚶 Queue</h2><p><b>Used for Student Attempts</b></p><p>Students are handled in order. The first student entering the queue is processed first.</p><div class="chain"><b>FRONT</b> → <b>Student A</b> → <b>Student B</b> → <b>Student C</b> → <b>REAR</b></div><ul><li>FIFO — First In, First Out</li><li>Enqueue / dequeue</li><li>Ordered processing</li></ul></article></div></section>
+
+<section id="workflow" class="section"><div class="heading"><p class="eyebrow">WORKFLOW</p><h2>From question to result.</h2></div>
+<div class="flow"><div>01<br><b>Admin</b><small>Create Questions</small></div><div>02<br><b>Linked List</b><small>Question Bank</small></div><div>03<br><b>Student</b><small>Enter Details</small></div><div>04<br><b>Queue</b><small>Process Attempt</small></div><div>05<br><b>Evaluation</b><small>Compare Answers</small></div><div>06<br><b>Result</b><small>Score & Percentage</small></div></div></section>
+
+<section class="section light"><div class="heading"><p class="eyebrow">TECHNOLOGY</p><h2>Core programming concepts</h2></div><div class="pills"><span>C Programming</span><span>Structures</span><span>Pointers</span><span>Functions</span><span>Dynamic Memory</span><span>Singly Linked List</span><span>Queue</span><span>Algorithms</span></div></section>
+
+<section class="future"><p class="eyebrow">FUTURE ENHANCEMENTS</p><h2>Today we built the core. Tomorrow it can become a complete platform.</h2><div class="pills"><span>⏱ Timed Quizzes</span><span>🏆 Leaderboards</span><span>📈 Analytics</span><span>🔐 Authentication</span><span>💾 Database</span><span>🤖 AI Questions</span></div></section>
+
+<footer><div><b>QuizFlow</b><p>Online Quiz Management System · Data Structures Capstone</p></div><button onclick="openQuiz()">Try Demo Quiz</button></footer>
+
+<div id="modal" class="modal hidden"><div class="modalbox"><button class="close" onclick="closeQuiz()">×</button><div id="app"></div></div></div>
+<script src="script.js"></script>
+</body></html>
